@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto Slab", serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #e3e9ff;
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  min-height: 90vh;
+  background-color: rgb(41, 30, 60);
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.top {
+  text-align: center;
+  margin: 1rem;
+}
+
+.top h1 {
+  color: white;
+  display: inline;
+}
+
+.top i,
+.mid i {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.mid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.mid input {
+  font-size: 1.25rem;
+  width: 70%;
+  border: none;
+  padding: 0.25rem 0.25rem;
+  border-radius: 3px;
+  font-family: inherit;
+  color: black;
+  font-weight: bold;
+  outline: none;
+}
+
+.mid button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.items-list {
+  list-style-type: none;
+  margin-top: 1rem;
+  padding: 0;
+  width: 100%;
+  color: white;
+}
+
+.items-list li {
+  font-size: 1.25rem;
+  border-bottom: 1px solid #e3e9ff;
+  padding: 0.5rem 1.25rem;
+  cursor: pointer;
+}
+
+.items-list li.completed {
+  text-decoration: line-through;
+  color: #e3e9ff;
+}
+
+.items-list li:first-child {
+  border-top: 1px solid #e3e9ff;
+}
+
+.footer {
+  margin-top: 3rem;
+  text-align: center;
+  width: 100%;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  color: #e3e9ff;
+  opacity: 0.85;
+  margin: 0;
+}
